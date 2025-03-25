@@ -14,7 +14,23 @@ function generateKeys() {
 async function apiRequest(method, endpoint, body = null, token = null) {
     const headers = {
         'User-Agent': '',
-@@ -34,67 +33,51 @@
+        'Content-Type': 'application/json',
+    };
+
+    if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+    }
+
+    const options = {
+        method,
+        headers,
+    };
+
+    if (body) {
+        options.body = JSON.stringify(body);
+    }
+
+    const response = await fetch(`https://api.cloudflareclient.com/v0i1909051800/${endpoint}`, options);
     return response.json();
 }
 
