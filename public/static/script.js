@@ -2,6 +2,7 @@ async function generateConfig() {
     const button = document.getElementById('generateButton');
     const button_text = document.querySelector('#generateButton .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -32,12 +33,14 @@ async function generateConfig() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+ info.textContent = status.textContent
 }
 
 async function generateConfig2() {
     const button = document.getElementById('generateButton2');
     const button_text = document.querySelector('#generateButton2 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -68,12 +71,14 @@ async function generateConfig2() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 async function generateConfig3() {
     const button = document.getElementById('generateButton3');
     const button_text = document.querySelector('#generateButton3 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -104,12 +109,14 @@ async function generateConfig3() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 async function generateConfig4() {
     const button = document.getElementById('generateButton4');
     const button_text = document.querySelector('#generateButton4 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -140,12 +147,14 @@ async function generateConfig4() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 async function generateConfig5() {
     const button = document.getElementById('generateButton5');
     const button_text = document.querySelector('#generateButton5 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -176,12 +185,14 @@ async function generateConfig5() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 async function generateConfig6() {
     const button = document.getElementById('generateButton6');
     const button_text = document.querySelector('#generateButton6 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -212,12 +223,14 @@ async function generateConfig6() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 async function generateConfig7() {
     const button = document.getElementById('generateButton7');
     const button_text = document.querySelector('#generateButton7 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -248,12 +261,14 @@ async function generateConfig7() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 async function generateConfig8() {
     const button = document.getElementById('generateButton8');
     const button_text = document.querySelector('#generateButton8 .button__text');
     const status = document.getElementById('status');
+	const info = document.getElementById('info');
     const randomNumber = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
 
     // Изменяем состояние кнопки на загрузку
@@ -284,6 +299,7 @@ async function generateConfig8() {
         button.disabled = false;
         button.classList.remove("button--loading");
     }
+	 info.textContent = status.textContent
 }
 
 document.getElementById('generateButton2').onclick = generateConfig2;
