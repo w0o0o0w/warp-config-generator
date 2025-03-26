@@ -16,7 +16,7 @@ async function generateConfig() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `WARPp_${randomNumber}.conf`;
                 link.click();
             };
@@ -54,7 +54,7 @@ async function generateConfig2() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `KaringWARP_${randomNumber}.conf`;
                 link.click();
             };
@@ -92,7 +92,7 @@ async function generateConfig3() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `WARPinWARP_${randomNumber}.conf`;
                 link.click();
             };
@@ -130,7 +130,7 @@ async function generateConfig4() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `WARPr_${randomNumber}.conf`;
                 link.click();
             };
@@ -168,7 +168,7 @@ async function generateConfig5() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `NekoWARP_${randomNumber}.conf`;
                 link.click();
             };
@@ -206,7 +206,7 @@ async function generateConfig6() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `WARPm_${randomNumber}.conf`;
                 link.click();
             };
@@ -244,7 +244,7 @@ async function generateConfig7() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `ClashWARP_${randomNumber}.yaml`;
                 link.click();
             };
@@ -282,7 +282,7 @@ async function generateConfig8() {
         if (data.success) {
             const downloadFile = () => {
                 const link = document.createElement('a');
-                link.href = 'data:text/plain;base64,' + data.content;
+                link.href = 'data:application/octet-stream;base64,' + data.content;
                 link.download = `HusiWARP_${randomNumber}.conf`;
                 link.click();
             };
