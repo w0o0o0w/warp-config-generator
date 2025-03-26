@@ -153,7 +153,9 @@ button:disabled {
     height: 120px; /* Фиксированная высота для плавной анимации */
 }	
 
-#status {
+
+
+#info {
     margin-bottom: 20px;
     color: red;
 	border-radius: 5px;
@@ -164,14 +166,30 @@ button:disabled {
 }
 
 
+#status {
+    color: red;
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px red inset;
+	padding: 15px;
+	margin: 0 auto 20px;
+}
+
+#status:empty {
+    display: none;
+}
 
 @media (max-width: 730px) {
 	       
 	.grid-container {
 		grid-template-columns: 1fr; /* Один столбец на мобильных устройствах */}
-	#status {
+	#info {
         display: block; /* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
    }
+   
+   #status {
+        display: none; /* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
+   }
+   
 	.containerClash {
 	
 		order: 3; /* Перемещаем Clash вниз */
