@@ -122,7 +122,7 @@ const { wprivKey, wpubKey } = wgenerateKeys();
 
     // Формируем конфиг
     const conf = `proxies: 
-- name: "WARP_"
+- name: "WARP"
   type: wireguard
   private-key: ${privKey}
   server: 188.114.96.0
@@ -146,8 +146,8 @@ const { wprivKey, wpubKey } = wgenerateKeys();
    h4: 3
    h3: 4
    
-- name: "WARP in WARP_"
-  dialer-proxy: WARP_
+- name: "WARP in WARP"
+  dialer-proxy: WARP
   type: wireguard
   private-key: ${wprivKey}
   server: 188.114.97.170
@@ -162,19 +162,13 @@ const { wprivKey, wpubKey } = wgenerateKeys();
   dns: [1.1.1.1, 1.0.0.1]
   
 proxy-groups: 
-- name: WARP
+- name: Cloudflare
   type: select
   icon: https://developers.cloudflare.com/_astro/logo.p_ySeMR1.svg
   proxies:
-    - WARP_
-  url: 'http://speed.cloudflare.com/'
-  interval: 300
-- name: WARP in WARP
-  type: select
-  icon: https://developers.cloudflare.com/_astro/logo.p_ySeMR1.svg
-  proxies:
-    - WARP in WARP_
-  url: 'http://speed.cloudflare.com/'
+    - WARP
+    - WARP in WARP
+  url: 'http://cp.cloudflare.com/generate_204'
   interval: 300`;
 
     // Возвращаем конфиг
