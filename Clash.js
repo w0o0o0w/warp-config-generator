@@ -168,7 +168,7 @@ proxy-groups:
   proxies:
     - WARP
     - WARP in WARP
-  url: 'http://cp.cloudflare.com/generate_204'
+  url: 'http://speed.cloudflare.com/'
   interval: 300`;
 
     // Возвращаем конфиг
