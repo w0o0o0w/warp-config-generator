@@ -121,7 +121,7 @@ const { wprivKey, wpubKey } = wgenerateKeys();
    
 
     // Формируем конфиг
-    const conf = `proxies: 
+    const conf = `proxies:
 - name: "WARP"
   type: wireguard
   private-key: ${privKey}
@@ -161,7 +161,7 @@ const { wprivKey, wpubKey } = wgenerateKeys();
   remote-dns-resolve: true
   dns: [1.1.1.1, 1.0.0.1]
   
-proxy-groups: 
+proxy-groups:
 - name: Cloudflare
   type: select
   icon: https://developers.cloudflare.com/_astro/logo.p_ySeMR1.svg
