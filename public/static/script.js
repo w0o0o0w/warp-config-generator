@@ -352,5 +352,9 @@ document.getElementById('BoostyButton').onclick = function() {
 
 
 document.getElementById('githubButton').onclick = function() {
-    window.location.href = 'https://docs.google.com/document/d/1DX4X7t7V4QasQJYbps5D1yNtsK7tqsouSMJH2w4AMOY';
+    window.location.href = 'https://chatter-bike-3df.notion.site/1f72684dab0d8092a582ed6328632d06';
+}
+
+document.getElementById('promoButton').onclick = function() {
+    window.location.href = 'https://chatter-bike-3df.notion.site/Amnezia-Premium-1f72684dab0d8013a057ed6562c8bdca';
 }
