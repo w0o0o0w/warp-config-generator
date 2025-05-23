@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    
     justify-content: center;
     align-items: center;
  
@@ -9,7 +9,7 @@ body {
     margin: 0; /* Убираем отступы */
 }
 .container {
-    display: flex;
+    
     flex-direction: column;
     align-items: center; /* Центрируем элементы по горизонтали */
     text-align: center; /* Центрируем текст внутри элементов */
@@ -271,3 +271,5 @@ button:disabled {
     .containerAWG:nth-of-type(4) {order: 2}
 	.containerAWG:nth-of-type(2) {margin-bottom: 60px;}	
 }
+		
+    
